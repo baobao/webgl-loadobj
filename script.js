@@ -93,7 +93,7 @@ window.onload = function ()
             var eyePos = [0, eyeYRange.value, eyeZRange.value];
             var lightPos = [lightXRange.value, lightYRange.value, 0];
 
-            gl.clearColor(0.3,0.3,0.3,1);
+            gl.clearColor(1,1,1,1);
             gl.clear(gl.COLOR_BUFFER_BIT);
 
             m.lookAt(eyePos, [0, centerY.value, 0], [0, 1, 0], vMatrix);
