@@ -14,6 +14,7 @@ window.onload = function ()
     {
         var lightXRange = document.getElementById("lightX");
         var lightYRange = document.getElementById("lightY");
+        var lightZRange = document.getElementById("lightZ");
         var eyeYRange = document.getElementById("eyeY");
         var eyeZRange = document.getElementById("eyeZ");
         var centerY = document.getElementById("centerY");
@@ -91,7 +92,7 @@ window.onload = function ()
         function draw()
         {
             var eyePos = [0, eyeYRange.value, eyeZRange.value];
-            var lightPos = [lightXRange.value, lightYRange.value, 0];
+            var lightPos = [lightXRange.value, lightYRange.value, lightZRange.value];
 
             gl.clearColor(1,1,1,1);
             gl.clear(gl.COLOR_BUFFER_BIT);
