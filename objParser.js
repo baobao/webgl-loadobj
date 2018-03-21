@@ -43,8 +43,8 @@ function parse(text)
             var tmp = line.split(' ');
             // 0番目は `f `なので無視
             var p0 = tmp[1].split("/");
-            var p1 = tmp[2].split("/");;
-            var p2 = tmp[3].split("/");;
+            var p1 = tmp[2].split("/");
+            var p2 = tmp[3].split("/");
 
             indexDataList.push({
                 "v":p0[0] - 1,
@@ -77,9 +77,8 @@ function parse(text)
                 if (normalIndexList.indexOf(normalIndex) < 0)
                 {
                     // 法線Index配列
-//                    normalIndexList.push(normalIndex);
+                    normalIndexList.push(normalIndex);
                 }
-                   normalIndexList.push(normalIndex);
             }
         }
         
